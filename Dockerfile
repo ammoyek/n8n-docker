@@ -9,4 +9,4 @@ ENV N8N_PROTOCOL=http
 
 EXPOSE 5678
 
-CMD ["n8n"]
+ENTRYPOINT ["tini", "--", "n8n"]
